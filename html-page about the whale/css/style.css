@@ -1,0 +1,112 @@
+.body { 
+    background: linear-gradient(180deg, #C1E9FF 0%, #D1C1FF 100%);  
+    } 
+.wrapper { 
+        display:grid; 
+        margin-block-start: 100px; 
+        margin-left: 100px; 
+        margin-bottom: 100px; 
+        width: 1440px; 
+        height: 899px; 
+        background: linear-gradient(180deg, #FFFDF4 0%, #FFFCEB 100%); 
+        box-shadow: -15px 12px 56px rgba(0, 0, 0, 0.12); 
+        border-radius: 30px; 
+    } 
+.logo { 
+        display:grid; 
+        margin-left: 50px; 
+        margin-top: 92px;
+    } 
+    .link {
+        text-decoration: none; 
+        color:#454545; 
+        font-weight:500; 
+    }
+.list { 
+        list-style-type: none; 
+        display:grid; 
+        justify-items: end; 
+        grid-auto-flow: column; 
+        margin-left: 50px; 
+        margin-top: -20px; 
+        gap:100px; 
+    } 
+.picture {
+    display:flex; 
+    justify-items:flex-end; 
+} 
+.bubbles {
+    display:flex; 
+    justify-content: center; 
+    justify-items: end; 
+}
+.gridcontainer{ 
+    display:grid; 
+} 
+.text .text1{ 
+    justify-items: end; 
+}
+h1 {
+    left: 10.28%;
+    right: 58.68%;
+    top: 23.47%;
+    bottom: 60.51%;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 129%; 
+    background: linear-gradient(180deg, #1B18F9 0%, #1B18F9 46.35%, #E146AD 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 36px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 210px;
+    height: 69px;
+    left: 148px;
+    top: 535px;
+    
+    background: radial-gradient(255.8% 457.4% at 88.45% 24.64%, #C27FCF 0%, #0368FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 18px;
+}
+    .imgsidebar{ 
+        display:grid; 
+        justify-items: end; 
+        margin-top: -585px; 
+    } 
+    .rightgraphic {
+        width: 627px; 
+        height: 899px; 
+    }
+    .rightgraphic1 {
+        position:relative;  
+    }
+    .whale{ 
+        position:absolute; 
+        width:700px; 
+        height:500px; 
+        top: -670px; 
+        left:-700px; 
+    } 
+    .link {
+        text-decoration: none; 
+        font-family: 'Spartan';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 155.5%;
+        text-align: center;
+        color: #454545;
+        grid-template: auto 1fr 1fr;
+        
+    }
