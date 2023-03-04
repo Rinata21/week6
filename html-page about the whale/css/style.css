@@ -79,6 +79,21 @@ text-fill-color: transparent;
     background: radial-gradient(255.8% 457.4% at 88.45% 24.64%, #C27FCF 0%, #0368FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     border-radius: 18px;
 }
+.begin {
+    text-decoration: none;      
+width: 138px;
+height: 35px;
+
+font-family: 'Spartan';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 146.5%;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
     .imgsidebar{ 
         display:grid; 
         justify-items: end; 
@@ -98,7 +113,7 @@ text-fill-color: transparent;
         top: -670px; 
         left:-700px; 
     } 
-    .link {
+    .link1 {
         text-decoration: none; 
         font-family: 'Spartan';
         font-style: normal;
