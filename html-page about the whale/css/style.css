@@ -1,127 +1,169 @@
-.body { 
-    background: linear-gradient(180deg, #C1E9FF 0%, #D1C1FF 100%);  
-    } 
-.wrapper { 
-        display:grid; 
-        margin-block-start: 100px; 
-        margin-left: 100px; 
-        margin-bottom: 100px; 
-        width: 1440px; 
-        height: 899px; 
-        background: linear-gradient(180deg, #FFFDF4 0%, #FFFCEB 100%); 
-        box-shadow: -15px 12px 56px rgba(0, 0, 0, 0.12); 
-        border-radius: 30px; 
-    } 
-.logo { 
-        display:grid; 
-        margin-left: 50px; 
-        margin-top: 92px;
-    } 
-    .link {
-        text-decoration: none; 
-        color:#454545; 
-        font-weight:500; 
-    }
-.list { 
-        list-style-type: none; 
-        display:grid; 
-        justify-items: end; 
-        grid-auto-flow: column; 
-        margin-left: 50px; 
-        margin-top: -20px; 
-        gap:100px; 
-    } 
-.picture {
-    display:flex; 
-    justify-items:flex-end; 
-} 
-.bubbles {
-    display:flex; 
-    justify-content: center; 
-    justify-items: end; 
+.body {
+    background-image: url(../assets/images/LeftGraphic.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 890px 534px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
 }
-.gridcontainer{ 
-    display:grid; 
-} 
-.text .text1{ 
-    justify-items: end; 
+    
+a {
+    text-decoration: none;
+}
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr;
+    height: 900px;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "begin video . ."
+    "footer footer footer footer";
+    background-image: url(../assets/images/RightGraphic.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 800px 873px;   
+    height: 700vh; 
+    }
+header {
+    grid-area: header;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 55px;
+    align-items: center;
+    max-width: 1150px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding-bottom: 20px;
+    font-family: "League-Spartan", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 155.5%;
+    padding-left: 197px;
+    padding-bottom: 0;
+    align-items: center;
+}
+nav ul li {
+    padding-right: 65px;
+    margin-top: -620px;
+    margin-left: 150px;
+}
+.menu-item{
+    left: 30.97%;
+    right: 63.47%;
+    top: 6.12%;
+    bottom: 90.77%;
+    
+    font-family: "League-Spartan", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 155.5%;
+    color: #454545;  
+}
+main {
+    grid-area: main;
+    position: relative;
+}
+footer {
+    grid-area: 3/3/4/4;
+    justify-self: center;
+    margin-top: -5600px;
+    margin-left: 1680px;
+    margin-right: 80px;
+    font-family: "League-Spartan", sans-serif; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 155.5%;
+    list-style-type: none;
+    color: #333030;
+}
+.crab {
+    position: absolute;
+    left: 0px;
+    top: 212px;
+    margin-top: -720px; 
 }
 h1 {
-    left: 10.28%;
-    right: 58.68%;
-    top: 23.47%;
-    bottom: 60.51%;
-    font-family: 'Spartan';
+    font-family: "League-Spartan", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
-    line-height: 129%; 
-    background: linear-gradient(180deg, #1B18F9 0%, #1B18F9 46.35%, #E146AD 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+    line-height: 129%;
+    max-width: 450px;
+    background: linear-gradient(180deg, #1b18f9 0%, #1b18f9 46.35%, #e146ad 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: -510px;
+    margin-left: 150px;
 }
-.button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 17px 36px;
-    gap: 10px;
-    
-    position: absolute;
-    width: 210px;
-    height: 69px;
-    left: 148px;
-    top: 535px;
-    
-    background: radial-gradient(255.8% 457.4% at 88.45% 24.64%, #C27FCF 0%, #0368FF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    border-radius: 18px;
+h1 + p {
+    max-width: 450px;
+    font-family: "League-Spartan", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 171.5%;
+    color: #454545;
+}
+p {
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.logo {
+    width: 198px;
+    height: 38px;
+    left: 51px;
+    top: 50px;
+    margin-top: -620px;
+    margin-left: 25px;
 }
 .begin {
-    text-decoration: none;      
-width: 138px;
-height: 35px;
-
-font-family: 'Spartan';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 146.5%;
-color: #FFFFFF;
-flex: none;
-order: 0;
-flex-grow: 0;
+    grid-area: begin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 210px;
+    height: 69px;
+    background: radial-gradient(
+    255.8% 457.4% at 88.45% 24.64%,
+    #c27fcf 0%,
+    #0368ff 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 18px;
+    font-family: "League-Spartan", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 146.5%;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: -3090px;
+    margin-left: 150px;
 }
-    .imgsidebar{ 
-        display:grid; 
-        justify-items: end; 
-        margin-top: -585px; 
-    } 
-    .rightgraphic {
-        width: 627px; 
-        height: 899px; 
-    }
-    .rightgraphic1 {
-        position:relative;  
-    }
-    .whale{ 
-        position:absolute; 
-        width:700px; 
-        height:500px; 
-        top: -670px; 
-        left:-700px; 
-    } 
-    .link1 {
-        text-decoration: none; 
-        font-family: 'Spartan';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 155.5%;
-        text-align: center;
-        color: #454545;
-        grid-template: auto 1fr 1fr;
-        
-    }
+.video {
+    grid-area: video;
+    font-family: "League-Spartan", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 129%;
+    background: linear-gradient(180deg, #1b18f9 0%, #1b18f9 46.35%, #e146ad 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: -3075px;
+    margin-left: 1px;
+    
+}
